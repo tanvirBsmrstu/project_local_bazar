@@ -1,0 +1,7 @@
+ List<Object> objList = findObj(name);
+   Collections.sort(objList, new Comparator<Object>() {
+       @Override
+       public int compare(Object a1, Object a2) {
+           return a1.getType().compareToIgnoreCase(a2.getType());
+       }
+   });
